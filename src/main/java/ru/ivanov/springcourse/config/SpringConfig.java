@@ -16,9 +16,6 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import javax.sql.DataSource;
 
-/**
- * @author Neil Alishev
- */
 @Configuration
 @ComponentScan("ru.ivanov.springcourse")
 @EnableWebMvc
@@ -63,7 +60,7 @@ public class SpringConfig implements WebMvcConfigurer {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/my_project1");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/book_keeping_using_jdbcTemplate");
         dataSource.setUsername("postgres");
         dataSource.setPassword("postgres");
 
